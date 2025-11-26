@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UZH DataLab</title>
+  <style>
+    /* Reset */
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif;}
+    body {background-color:#F3F4F6; color:#0A0A0A; scroll-behavior:smooth;}
+
+    /* Container */
+    .container {width:90%; max-width:1200px; margin:0 auto; padding:20px;}
+
+    /* Header */
+    header {display:flex; justify-content:space-between; align-items:center; padding:20px 0;}
+    header h1 {color:#1D6FE1; font-size:1.8rem; font-weight:bold;}
+    nav a {margin-left:20px; text-decoration:none; color:#0A0A0A; font-weight:500; transition:0.3s;}
+    nav a:hover {color:#1D6FE1;}
+
+    /* Hero */
+    .hero {text-align:center; padding:80px 20px; background-color:#E6F0FF; border-radius:15px;}
+    .hero h2 {font-size:2rem; font-weight:bold; color:#1D6FE1; margin-bottom:20px;}
+    .hero p {font-size:1.1rem; margin-bottom:30px;}
+    .hero .cta {background-color:#1D6FE1; color:#fff; padding:15px 30px; border:none; border-radius:10px; cursor:pointer; font-size:1rem; transition:0.3s; text-decoration:none; display:inline-block;}
+    .hero .cta:hover {background-color:#1555b0; transform:scale(1.05);}
+
+    /* Sections */
+    section {padding:60px 20px;}
+    section h3 {font-size:1.5rem; color:#1D6FE1; margin-bottom:20px;}
+    section p {margin-bottom:15px; line-height:1.6;}
+
+    /* Services */
+    .services {display:flex; flex-wrap:wrap; gap:20px;}
+    .service {background-color:#fff; padding:20px; border-radius:15px; flex:1 1 calc(33% - 20px); min-width:250px; box-shadow:0 6px 15px rgba(0,0,0,0.08); transition:0.5s; opacity:0; transform:translateY(50px); text-align:center;}
+    .service img {width:60px; height:60px; margin-bottom:15px;}
+    .service h4 {margin-bottom:10px; color:#1D6FE1;}
+    .service:hover {transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.1);}
+
+    /* Footer */
+    footer {background-color:#0A0A0A; color:#fff; text-align:center; padding:30px 20px;}
+    footer a {color:#1D6FE1; text-decoration:none; font-weight:500;}
+    footer a:hover {text-decoration:underline;}
+
+    /* Responsive */
+    @media(max-width:768px){.services{flex-direction:column;}} 
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>UZH DataLab</h1>
+      <nav>
+        <a href="#services">Layanan</a>
+        <a href="#trial">Trial Gratis</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h2>Jasa Data Entry Cepat & Rapi untuk UMKM</h2>
+      <p>Dikerjakan profesional, bisa kirim file lewat HP. Coba gratis 1 file kecil kapan saja.</p>
+      <a class="cta" href="https://wa.me/623861364595text=Halo%20UZH%20DataLab%2C%20saya%20mau%20coba%20Trial%20Gratis%201%20File%20Kecil%20%F0%9F%98%8A">Coba Gratis Sekarang</a>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h3>Layanan Kami</h3>
+      <div class="services">
+        <div class="service">
+          <img src="https://img.icons8.com/color/96/spreadsheet.png" alt="Data Entry Standard">
+          <h4>Data Entry Standard</h4>
+          <p>Input data dari foto, catatan, screenshot, atau PDF kecil.</p>
+        </div>
+        <div class="service">
+          <img src="https://img.icons8.com/color/96/broom.png" alt="Data Cleaning">
+          <h4>Data Cleaning</h4>
+          <p>Rapihin data, hilangkan duplikat, perbaiki format.</p>
+        </div>
+        <div class="service">
+          <img src="https://img.icons8.com/color/96/ms-excel.png" alt="Dokumen ke Excel">
+          <h4>Dokumen ke Excel</h4>
+          <p>Convert nota, kwitansi, atau catatan HP jadi Excel/Google Sheet rapi.</p>
+        </div>
+        <div class="service">
+          <img src="https://img.icons8.com/color/96/shopping-cart.png" alt="Listing Produk UMKM">
+          <h4>Listing Produk UMKM</h4>
+          <p>Nama produk, harga, deskripsi siap diunggah ke toko online.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trial -->
+    <section id="trial">
+      <h3>Trial Gratis</h3>
+      <p>Coba GRATIS 1 file kecil kapan saja, tanpa syarat. Kirim fotonya, kami akan proses rapi sebagai contoh hasil kerja UZH DataLab.</p>
+      <a class="cta" href="https://wa.me/6283861364595text=Halo%20UZH%20DataLab%2C%20saya%20mau%20coba%20Trial%20Gratis%201%20File%20Kecil%20%F0%9F%98%8A">Kirim File Sekarang</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h3>Hubungi Kami</h3>
+      <p>WhatsApp: <a href="https://wa.me/6283861364595">Klik di sini</a></p>
+      <p>Instagram: <a href="https://instagram.com/uzhdatalab" target="_blank">@uzhdatalab</a></p>
+      <p>Email: <a href="mailto:uzhdatalab@gmail.com">uzhdatalab@gmail.com</a></p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 UZH DataLab. All Rights Reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const services = document.querySelectorAll('.service');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.2});
+    services.forEach(service => observer.observe(service));
+  </script>
+
+</body>
+</html>
